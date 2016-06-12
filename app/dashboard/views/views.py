@@ -1,9 +1,9 @@
 #-*- coding: UTF-8 -*-
 
 from flask import render_template
-from . import dashboard
+from app.dashboard import dashboard
 
 
 @dashboard.route('/test', methods=['GET'])
 def get_resource():
-    return render_template("dashboard/test.html")
+    return render_template("dashboard/index.html")
