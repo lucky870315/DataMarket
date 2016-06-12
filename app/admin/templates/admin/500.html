@@ -2,16 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<link rel="stylesheet" href="/static/css/main.css" type="text/css" media="screen, projection" /> <!-- main stylesheet -->
-<link rel="stylesheet" type="text/css" media="all" href="/static/css/tipsy.css" /> <!-- Tipsy implementation -->
+<link rel="stylesheet" href="{{ url_for('admin.static',filename='css/main.css') }}" type="text/css" media="screen, projection" /> <!-- main stylesheet -->
+<link rel="stylesheet" type="text/css" media="all" href="{{ url_for('admin.static',filename='css/tipsy.css') }}" /> <!-- Tipsy implementation -->
 
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
 <![endif]-->
 
-<script type="text/javascript" src="/static/scripts/jquery-1.7.2.min.js"></script> <!-- uiToTop implementation -->
-<script type="text/javascript" src="/static/scripts/custom-scripts.js"></script>
-<script type="text/javascript" src="/static/scripts/jquery.tipsy.js"></script> <!-- Tipsy -->
+<script type="text/javascript" src="{{ url_for('admin.static',filename='scripts/jquery-1.7.2.min.js') }}"></script> <!-- uiToTop implementation -->
+<script type="text/javascript" src="{{ url_for('admin.static',filename='scripts/custom-scripts.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('admin.static',filename='scripts/jquery.tipsy.js') }}"></script> <!-- Tipsy -->
 
 <script type="text/javascript">
 
@@ -46,7 +46,7 @@ $(window).load(function(){
 <!-- Universal preloader -->
 <div id="universal-preloader">
     <div class="preloader">
-        <img src="/static/images/universal-preloader.gif" alt="universal-preloader" class="universal-preloader-preloader" />
+        <img src="{{ url_for('admin.static',filename='images/universal-preloader.gif') }}" alt="universal-preloader" class="universal-preloader-preloader" />
     </div>
 </div>
 <!-- Universal preloader -->
@@ -100,7 +100,7 @@ $(window).load(function(){
         	Don't worry! I'm on it!
         </p>
         <p class="dog-bubble">
-        	I wish I had a cookie<br /><img style="margin-top:8px" src="/static/images/cookie.png" alt="cookie" />
+        	I wish I had a cookie<br /><img style="margin-top:8px" src="{{ url_for('admin.static',filename='images/cookie.png') }}" alt="cookie" />
         </p>
         <p class="dog-bubble">
         	<br />
@@ -118,7 +118,7 @@ $(window).load(function(){
             OK, I'm officially lost now...
         </p>
         <p class="dog-bubble">
-        	I think I saw a <br /><img style="margin-top:8px" src="/static/images/cat.png" alt="cat" />
+        	I think I saw a <br /><img style="margin-top:8px" src="{{ url_for('admin.static',filename='images/cat.png') }}" alt="cat" />
         </p>
         <p class="dog-bubble">
         	What are we supposed to be looking for, anyway? @_@

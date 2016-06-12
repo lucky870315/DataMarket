@@ -1,10 +1,10 @@
 #!/usr/bin/env python
+from app.models import db
 from flask.ext.migrate import Migrate, MigrateCommand
 from flask.ext.script import Manager, Shell, prompt_bool
 
 from app import create_app
-from app.models import db
-from app.models.User import User
+from app.admin.models.User import User
 
 app = create_app("development")
 manager = Manager(app)

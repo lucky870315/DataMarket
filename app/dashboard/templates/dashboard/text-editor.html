@@ -9,17 +9,17 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/jquery.js') }}"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/loader-style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ url_for('dashboard.static',filename='assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('dashboard.static',filename='assets/css/loader-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('dashboard.static',filename='assets/css/bootstrap.css') }}">
 
 
 
-    <link href="assets/js/textEditor/editor.css" rel="stylesheet">
-    <link href="assets/js/textEditor/sceditor/minified/themes/square.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/js/textEditor/src/bootstrap-wysihtml5.css">
+    <link href="{{ url_for('dashboard.static',filename='assets/js/textEditor/editor.css') }}" rel="stylesheet">
+    <link href="{{ url_for('dashboard.static',filename='assets/js/textEditor/sceditor/minified/themes/square.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('dashboard.static',filename='assets/js/textEditor/src/bootstrap-wysihtml5.css') }}">
 
 
 
@@ -31,7 +31,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/minus.png">
+    <link rel="shortcut icon" href="{{ url_for('dashboard.static',filename='assets/ico/minus.png') }}">
 </head>
 
 <body><div id="awwwards" class="right black"><a href="http://www.awwwards.com/best-websites/apricot-navigation-admin-dashboard-template" target="_blank">best websites of the world</a></div>
@@ -921,22 +921,22 @@
 
 
     <!-- MAIN EFFECT -->
-    <script type="text/javascript" src="assets/js/preloader.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/load.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="assets/js/textEditor/parser_rules/advanced.js"></script>
-    <script src="assets/js/textEditor/dist/wysihtml5-0.4.0pre.js"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/preloader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/load.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('dashboard.static',filename='assets/js/main.js') }}"></script>
+    <script src="{{ url_for('dashboard.static',filename='assets/js/textEditor/parser_rules/advanced.js') }}"></script>
+    <script src="{{ url_for('dashboard.static',filename='assets/js/textEditor/dist/wysihtml5-0.4.0pre.js') }}"></script>
 
 
-    <script src="assets/js/textEditor/sceditor/minified/jquery.sceditor.bbcode.min.js"></script>
+    <script src="{{ url_for('dashboard.static',filename='assets/js/textEditor/sceditor/minified/jquery.sceditor.bbcode.min.js') }}"></script>
 
 
-    <script src="assets/js/textEditor/lib/js/wysihtml5-0.3.0.js"></script>
+    <script src="{{ url_for('dashboard.static',filename='assets/js/textEditor/lib/js/wysihtml5-0.3.0.js') }}"></script>
 
 
-    <script src="assets/js/textEditor/src/bootstrap3-wysihtml5.js"></script>
+    <script src="{{ url_for('dashboard.static',filename='assets/js/textEditor/src/bootstrap3-wysihtml5.js"></script>
 
     <script>
     $('.textarea').wysihtml5();
@@ -967,7 +967,7 @@
         var initEditor = function() {
             $(".sceditor").sceditor({
                 plugins: 'bbcode',
-                style: "assets/js/textEditor/sceditor/minified/square.min.css"
+                style: "assets/js/textEditor/sceditor/minified/square.min.css') }}"
             });
         };
 
@@ -980,7 +980,7 @@
     <script>
     var editor = new wysihtml5.Editor("textarea", {
         toolbar: "toolbar",
-        stylesheets: "assets/js/textEditor/examples/css/stylesheet.css",
+        stylesheets: "assets/js/textEditor/examples/css/stylesheet.css') }}",
         parserRules: wysihtml5ParserRules
     });
 

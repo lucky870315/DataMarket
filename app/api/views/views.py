@@ -1,22 +1,18 @@
 #-*- coding: UTF-8 -*-
 
 from flask import g, jsonify
-import json
-
-from app.views import auth
-from . import api
-from sqlalchemy import *
 from sqlalchemy.sql import select
-from sqlalchemy.schema import *
-from ..models import db_engine, meta, quotation_h
-from app.models import SWJsonify
+
+from app.admin.models import SWJsonify
+#from app.admin.views import auth
+from app.api import api
+from ..models import db_engine, quotation_h
 
 
 @api.route('/res', methods=['GET'])
-@auth.login_required
+#@auth.login_required
 def get_resource():
     return jsonify({'data': 'Hello,%s' % g.user.username})
-
 
 
 @api.route('/quotation/<string:commodity>', methods=['GET'])
